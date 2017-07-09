@@ -1,0 +1,285 @@
+*
+{
+    margin: 0;
+    padding: 0;   
+}
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+.container
+{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section
+{
+    padding: 30px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+#main_page
+{
+	min-height: 100vh;
+    padding: 0;
+}
+.scrollup
+{
+	width: 44px;
+	height: 44px;
+	text-decoration: none;
+    background-image: url(img/toUpscr.png);
+    background-size: cover;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	display: none;
+    opacity: 0.8;
+    transition: all 0.2s ease-in-out;
+}
+.scrollup:hover
+{
+    opacity: 1;
+}
+nav
+{
+    background-color: white;
+}
+.sticky
+{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+.menu
+{
+    max-width: 1000px;
+    margin: 0 auto;
+	display: flex;
+    justify-content: space-between;
+}
+ ul
+{
+    list-style-type: none;
+	display: flex;
+}
+a
+{
+    text-decoration: none;
+    color: #666;
+    display: block;
+}
+.menu a
+{
+	padding: 10px;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+.fb, .pint
+{
+	transition: all 0.2 ease-in-out;
+}
+.fb:hover, .pint:hover
+{
+	transform: scale(1.2);
+}
+ul .logo
+{
+    background-image: url(img/logo_mini_star.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    text-indent: -100000px;
+
+}
+.home 
+{
+    max-width: 90px;
+    margin: 0 auto;
+}
+#prologo
+{
+	display: block;
+	margin: 0 auto;
+}
+ul.home
+{
+    flex: 1 1 0;
+}
+
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+.main_banner img
+{
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	animation: fadeIn 1.2s ease-in-out;
+}
+.main_banner h1
+{
+	position: absolute;
+	top: 40%;
+	left: 35%;
+	text-indent: -10000px;
+}
+
+/*PROJEKTY*/
+#project
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+#project div
+{
+	padding: 30px 0;
+}
+.foto, .describe
+{
+	width: 50%;
+}
+.describe
+{
+	position: relative;
+	top: 50px;
+	text-align: justify;
+}
+.foto img
+{
+	width: 80%;
+	height: 80%;
+}
+.more
+{
+	font-size: 15px;
+	color: dimgray;
+}
+.more:hover
+{
+	cursor: pointer;
+}
+/*KONTAKT*/
+#contact
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 0;
+	padding-bottom: 60px;
+}
+.mapa
+{
+	width: 60%;
+}
+.info
+{
+	width: 35%;
+	text-align:left;
+}
+h3
+{
+    padding: 10px 0;
+}
+
+
+/*STOPKA*/
+footer
+{
+    font-size: 16px;
+    background-color: rgba(105,105,105,0.9);
+    width: 100%;
+    padding: 0 25px;
+    box-sizing: border-box;
+	display: flex;
+    justify-content: space-between;
+}
+footer a
+{
+	padding: 0 10px;
+	color: black;
+}
+.banner
+{
+	display: none;
+}
+@media screen and (max-width: 768px){
+	#project
+	{
+		flex-direction: column;
+	}
+	#contact
+	{
+		flex-direction: column-reverse;
+	}
+	.foto, .describe, .mapa, .info
+	{
+		width: 100%;
+	}
+	.mapa
+	{
+		max-height: 300px;
+	}
+	#project, #contact
+	{
+		margin: 0 4%;
+	}
+	.menu .logo, .menu .socials
+	{
+		display: none;
+	}
+	.navi
+	{
+		width: 100%;
+	}
+	.navi li:not(:first-child)
+	{
+		flex: 1;
+	}
+	.scrollup
+	{
+		width: 35px;
+		height: 35px;
+		right: 30px;
+		bottom: 30px;
+	}
+	.describe
+	{
+		top: 0;
+		padding-top: 0;
+	}
+	.foto
+	{
+		padding-bottom: 5px;
+	}
+	#main_page
+	{
+		min-height: auto;
+	}
+	.main_banner
+	{
+		display: none;
+	}
+	.banner
+	{
+		display: block;
+	}
+}
+@media screen and (max-width: 480px){
+	body
+	{
+		font-size: .9em;	
+	}
+	}

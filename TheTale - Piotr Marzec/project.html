@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheTale - Projekt 1</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="fontello/css/fontello.css">
+    <link rel="icon" href="img/logo_mini_star.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin-ext" rel="stylesheet">
+    <meta name="description" content="Zakład stolarski Piotr Marzec">
+    <meta name="keywords" content="meble, meble na wymiar, biurko, produktywność, styl, stolarka">  
+</head>
+
+<body>
+
+	<a href="#prologo" class="scrollup"></a>
+    <header>
+		<img id="prologo" src="img/logo_star.jpg">
+	</header>
+	<nav style="text-align:center;">
+		<div class="menu">
+			<ul class="navi">
+				<li class="home"><a href="#main_page" class="logo">h</a></li>
+				<li><a href="#main_page">O mnie</a></li>
+				<li><a href="#project">Projekty</a></li>
+				<li><a href="#contact">Kontakt</a></li>
+			</ul>
+
+			<ul class="socials">
+				<li><a href="#">EN</a></li>
+				<li><a href="#">FR</a></li>
+				<li><a class="fb" href="#"><i class="icon-facebook"></i></a></li>
+				<li><a class="pint" href="#"><i class="icon-pinterest"></i></a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container section">
+		<main>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris faucibus facilisis massa, in porttitor quam cursus et. Quisque nec urna bibendum, faucibus elit at, semper risus. Fusce ac ullamcorper nunc. Etiam lobortis quis velit eget euismod. Integer sed neque tortor. Donec vel neque ut diam consequat mollis in ut eros. Aliquam sit amet tortor lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec scelerisque, eros eu mollis dignissim, ante lacus porttitor neque, pharetra rhoncus nunc orci in leo. Duis sit amet luctus lectus, nec pretium metus. Proin sagittis orci sit amet enim interdum, nec rhoncus libero hendrerit.
+
+Donec ut tempor erat, nec posuere sapien. Donec ornare a leo eget mattis. Sed quis nisi in nibh imperdiet condimentum. Suspendisse interdum ex in varius ultricies. Duis metus risus, suscipit eget metus non, feugiat mollis dolor. Curabitur facilisis ornare felis, vitae tristique purus tempus sit amet. Suspendisse volutpat cursus pulvinar. Praesent pretium a lacus quis mattis. Maecenas non nibh enim. Etiam aliquam non leo non scelerisque. Pellentesque maximus porttitor tellus, at tempor nulla suscipit vitae.
+
+Aliquam mollis velit at libero placerat, a ullamcorper enim pharetra. Maecenas fermentum malesuada turpis. Nulla velit quam, molestie sagittis varius a, tempus a orci. Vivamus porta turpis a odio maximus vulputate. Suspendisse maximus porta posuere. Ut erat erat, dictum id neque eu, pharetra malesuada sem. Cras efficitur est sed massa congue interdum. Quisque vitae suscipit justo. In dictum turpis elit, ut vehicula risus viverra quis. Ut fermentum lacus nec lorem maximus, at aliquet ante volutpat. Proin quis nisi vel lectus hendrerit rhoncus. Vivamus euismod faucibus ultricies. Etiam facilisis eget sem vitae consectetur. Nulla placerat, dui et aliquet bibendum, urna urna rhoncus eros, eget mollis elit est vitae nunc. Proin pharetra venenatis lorem, sit amet laoreet dolor pretium a. Aenean a leo in diam porttitor molestie vel vitae eros.
+
+Praesent venenatis gravida consequat. Nulla auctor condimentum nisl sit amet accumsan. Curabitur vestibulum est id lorem fringilla, vitae gravida mauris porttitor. Duis vel velit imperdiet, facilisis dolor non, rutrum dui. In magna ligula, convallis vel nunc a, malesuada dapibus leo. Donec non purus in velit rhoncus rhoncus. Vivamus non purus sodales, eleifend urna eu, iaculis justo.
+
+Integer semper tellus nec maximus dignissim. Vestibulum tortor risus, dictum a libero quis, feugiat interdum dui. In et faucibus ante, id tempus velit. Sed sodales leo et vehicula aliquam. Donec consectetur massa mauris, eu posuere nisi molestie ac. Suspendisse accumsan facilisis odio, eget lobortis ante porttitor vitae. Vestibulum feugiat condimentum ex, vel sodales nisi suscipit nec. Phasellus turpis elit, suscipit eu elit vel, maximus ullamcorper ipsum. Donec at mi est. Phasellus tincidunt egestas massa vel consequat. Praesent vehicula metus nibh, in ornare neque faucibus nec. Quisque convallis, arcu sit amet ullamcorper ornare, quam metus porttitor tortor, sit amet imperdiet enim erat a orci. Morbi auctor ullamcorper ante, vel pretium lacus ornare eget.
+		</main>
+	</div>
+    
+    
+        <!-- Stopka przyklejona na stałe -->
+    <footer>
+		<p>&copy;TheTale 2017</p>
+		<ul class="socials">
+			<li><a href="#">EN</a></li>
+			<li><a href="#">FR</a></li>
+			<li><a class="fb" href="#"><i class="icon-facebook"></i></a></li>
+			<li><a class="pint" href="#"><i class="icon-pinterest"></i></a></li>
+		</ul>
+	</footer>
+
+    <script src="_js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            /*Przyklejona nawigacja*/
+            var NavY = $('nav').offset().top;
+            var stickyNav = function(){
+            var ScrollY = $(window).scrollTop();
+
+            if (ScrollY > NavY) { 
+                $('nav').addClass('sticky');
+            } else {
+                $('nav').removeClass('sticky'); 
+            }
+            };
+            stickyNav();
+            $(window).scroll(function() {
+                stickyNav();
+            });//Koniec sticky menu
+            /*Logo w nawigacji*/
+            $('.home').hide();
+            $(window).scroll(function()
+            {
+                if($(this).scrollTop()>100) {
+                    $('.home').slideDown(500);
+                    }
+                else $('.home').slideUp(500);		
+            }); //Koniec logo_nav
+            /*Przewijanie do góry*/
+            $('.scrollup').hide();
+            $(window).scroll(function()
+            {
+                if($(this).scrollTop()>200) {
+                    $('.scrollup').fadeIn();
+                    }
+                else $('.scrollup').fadeOut();		
+            });
+			/*Smooth scrolling*/
+			$('a[href^="#"]').on('click', function(evt){
+				var target = $($(this).attr('href'));
+				if (target.length){
+					evt.preventDefault();
+					$('html, body').animate({
+						scrollTop: target.offset().top
+					}, 1000);
+				} // Koniec if
+			});
+        });//Koniec fukncji ready
+    </script>
+</body>
+</html>
