@@ -1,5 +1,5 @@
 # TheTale
-TheTale web page
+The project web page for furniture designer and manufacturer TheTale-Piotr Marzec
 
 Technology:
 
