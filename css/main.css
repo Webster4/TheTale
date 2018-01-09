@@ -1,3 +1,6 @@
+/* body{
+    font-family: 'Open Sans', sans-serif;
+} */
 #header{
   min-height: 100vh;
   /* margin-bottom: 20%; */
@@ -50,10 +53,13 @@
   height: 75%;
 }
 /* Projects section */
-.describe, .describe img{
+.project{
+  margin: 1.8rem 0;
+}
+.gallery, .gallery img{
   margin: 1.5rem 0;
 }
-.more:hover{
+.more:hover, .less:hover{
   cursor: pointer;
 }
 .active{
@@ -102,6 +108,9 @@ footer li>a:hover{
   .carousel-inner img{
     width: 100%;
     height: 100%;
+  }
+  .description, .gallery, .gallery img, .less{
+    margin: 1.5rem 0 0 0;
   }
   #contact address{
     padding-top: 2rem;

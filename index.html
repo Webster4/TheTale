@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="img/logo_mini_star.jpg">
 </head>
 
 
@@ -62,6 +63,12 @@
       <div class="row justify-content-center">
         <div class="col-md-5">
           <div id="about-display" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#about-display" data-slide-to="0" class="active"></li>
+              <li data-target="#about-display" data-slide-to="1"></li>
+              <li data-target="#about-display" data-slide-to="2"></li>
+            </ul>
             <!-- The slideshow -->
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -74,6 +81,13 @@
                 <img src="img\casket1.jpg" alt="szkatułka">
               </div>
             </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#about-display" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#about-display" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
           </div>
         </div>
         <div class="col-md-4 align-self-center">
@@ -89,9 +103,9 @@
   <section class="section" id="projects">
     <div class="container">
       <h2 class="text-center">Projekty</h2>
-      <div class="row justify-content-around">
-        <!-- MODESTO -->
-        <div class="col-md-5 col-lg-3">
+      <!-- MODESTO -->
+      <div class="row justify-content-around project">
+        <div class="col-md-4">
           <div class="card text-center more">
             <img class="card-img-top" src="img\modesto1.jpg" alt="Modesto">
             <div class="card-body">
@@ -99,12 +113,12 @@
             </div>
           </div>
         </div>
-        <div class="container describe visible">
-          <div class="row">
-            <p class="text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium tellus nunc, vehicula pellentesque elit iaculis quis. Phasellus dui risus, venenatis ac malesuada sed, vehicula ac nisi. Morbi gravida diam quis lacus commodo eleifend. Nullam augue sem, convallis eu sem in, imperdiet tincidunt mi. Aliquam vitae tincidunt mauris. Etiam convallis sagittis enim, quis placerat odio euismod vitae. Nullam vitae lectus diam. Quisque tellus massa, vulputate in luctus vel, malesuada mollis mi. Quisque luctus pretium eros ut venenatis. Sed hendrerit dui vitae eros iaculis finibus. Nulla et posuere mauris, nec placerat dolor. Nam orci sem, euismod et tortor a, rhoncus consectetur sapien. Nam a nisl laoreet, commodo tortor a, fermentum velit. Aenean arcu libero, ullamcorper eu neque vitae, aliquam venenatis odio.
-            </p>
-          </div>
+        <div class="col-md-5">
+          <p class="text-justify description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium tellus nunc, vehicula pellentesque elit iaculis quis. Phasellus dui risus, venenatis ac malesuada sed, vehicula ac nisi. Morbi gravida diam quis lacus commodo eleifend. Nullam augue sem, convallis eu sem in, imperdiet tincidunt mi. Aliquam vitae tincidunt mauris. Etiam convallis sagittis enim, quis placerat odio euismod vitae. Nullam vitae lectus diam. Quisque tellus massa, vulputate in luctus vel, malesuada mollis mi. Quisque luctus pretium eros ut venenatis. Sed hendrerit dui vitae eros iaculis finibus. Nulla et posuere mauris, nec placerat dolor. Nam orci sem, euismod et tortor a, rhoncus consectetur sapien. Nam a nisl laoreet, commodo tortor a, fermentum velit. Aenean arcu libero, ullamcorper eu neque vitae, aliquam venenatis odio.
+          </p>
+        </div>
+        <div class="container gallery visible">
           <div class="row justify-content-around">
             <div class="col-lg-4 col-md-6">
               <img class="img-fluid rounded" src="img\modesto1.jpg" alt="modesto">
@@ -138,8 +152,10 @@
             <button type="button" class="btn btn-outline-dark less">Mniej</button>
           </div>
         </div>
-        <!-- LANA -->
-        <div class="col-md-5 col-lg-3">
+      </div>
+      <!-- LANA -->
+      <div class="row justify-content-around project">
+        <div class="col-md-4">
           <div class="card text-center more">
             <img class="card-img-top" src="img\lana1.jpg" alt="Lana">
             <div class="card-body">
@@ -147,12 +163,12 @@
             </div>
           </div>
         </div>
-        <div class="container describe visible">
-          <div class="row">
-            <p class="text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium tellus nunc, vehicula pellentesque elit iaculis quis. Phasellus dui risus, venenatis ac malesuada sed, vehicula ac nisi. Morbi gravida diam quis lacus commodo eleifend. Nullam augue sem, convallis eu sem in, imperdiet tincidunt mi. Aliquam vitae tincidunt mauris. Etiam convallis sagittis enim, quis placerat odio euismod vitae. Nullam vitae lectus diam. Quisque tellus massa, vulputate in luctus vel, malesuada mollis mi. Quisque luctus pretium eros ut venenatis. Sed hendrerit dui vitae eros iaculis finibus. Nulla et posuere mauris, nec placerat dolor. Nam orci sem, euismod et tortor a, rhoncus consectetur sapien. Nam a nisl laoreet, commodo tortor a, fermentum velit. Aenean arcu libero, ullamcorper eu neque vitae, aliquam venenatis odio.
-            </p>
-          </div>
+        <div class="col-md-5">
+          <p class="text-justify description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium tellus nunc, vehicula pellentesque elit iaculis quis. Phasellus dui risus, venenatis ac malesuada sed, vehicula ac nisi. Morbi gravida diam quis lacus commodo eleifend. Nullam augue sem, convallis eu sem in, imperdiet tincidunt mi. Aliquam vitae tincidunt mauris. Etiam convallis sagittis enim, quis placerat odio euismod vitae. Nullam vitae lectus diam. Quisque tellus massa, vulputate in luctus vel, malesuada mollis mi. Quisque luctus pretium eros ut venenatis. Sed hendrerit dui vitae eros iaculis finibus. Nulla et posuere mauris, nec placerat dolor. Nam orci sem, euismod et tortor a, rhoncus consectetur sapien. Nam a nisl laoreet, commodo tortor a, fermentum velit. Aenean arcu libero, ullamcorper eu neque vitae, aliquam venenatis odio.
+          </p>
+        </div>
+        <div class="container gallery visible">
           <div class="row justify-content-around">
             <div class="col-lg-4 col-md-6">
               <img class="img-fluid rounded" src="img\lana1.jpg" alt="modesto">
@@ -174,8 +190,10 @@
             <button type="button" class="btn btn-outline-dark less">Mniej</button>
           </div>
         </div>
-        <!-- AURORA -->
-        <div class="col-md-5 col-lg-3">
+      </div>
+      <!-- AURORA -->
+      <div class="row justify-content-around project">
+        <div class="col-md-4">
           <div class="card text-center more">
             <img class="card-img-top" src="img\aurora1.jpg" alt="Szkatułka">
             <div class="card-body">
@@ -183,12 +201,12 @@
             </div>
           </div>
         </div>
-        <div class="container describe visible">
-          <div class="row">
-            <p class="text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium tellus nunc, vehicula pellentesque elit iaculis quis. Phasellus dui risus, venenatis ac malesuada sed, vehicula ac nisi. Morbi gravida diam quis lacus commodo eleifend. Nullam augue sem, convallis eu sem in, imperdiet tincidunt mi. Aliquam vitae tincidunt mauris. Etiam convallis sagittis enim, quis placerat odio euismod vitae. Nullam vitae lectus diam. Quisque tellus massa, vulputate in luctus vel, malesuada mollis mi. Quisque luctus pretium eros ut venenatis. Sed hendrerit dui vitae eros iaculis finibus. Nulla et posuere mauris, nec placerat dolor. Nam orci sem, euismod et tortor a, rhoncus consectetur sapien. Nam a nisl laoreet, commodo tortor a, fermentum velit. Aenean arcu libero, ullamcorper eu neque vitae, aliquam venenatis odio.
-            </p>
-          </div>
+        <div class="col-md-5">
+          <p class="text-justify description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium tellus nunc, vehicula pellentesque elit iaculis quis. Phasellus dui risus, venenatis ac malesuada sed, vehicula ac nisi. Morbi gravida diam quis lacus commodo eleifend. Nullam augue sem, convallis eu sem in, imperdiet tincidunt mi. Aliquam vitae tincidunt mauris. Etiam convallis sagittis enim, quis placerat odio euismod vitae. Nullam vitae lectus diam. Quisque tellus massa, vulputate in luctus vel, malesuada mollis mi. Quisque luctus pretium eros ut venenatis. Sed hendrerit dui vitae eros iaculis finibus. Nulla et posuere mauris, nec placerat dolor. Nam orci sem, euismod et tortor a, rhoncus consectetur sapien. Nam a nisl laoreet, commodo tortor a, fermentum velit. Aenean arcu libero, ullamcorper eu neque vitae, aliquam venenatis odio.
+          </p>
+        </div>
+        <div class="container gallery visible">
           <div class="row justify-content-around">
             <div class="col-lg-4 col-md-6">
               <img class="img-fluid rounded" src="img\aurora1.jpg" alt="modesto">
@@ -210,8 +228,10 @@
             <button type="button" class="btn btn-outline-dark less">Mniej</button>
           </div>
         </div>
-        <!-- SZKATUŁKA -->
-        <div class="col-md-5 col-lg-3">
+      </div>
+      <!-- SZKATUŁKA -->
+      <div class="row justify-content-around project">
+        <div class="col-md-4">
           <div class="card text-center more">
             <img class="card-img-top" src="img\casket1.jpg" alt="Szkatułka">
             <div class="card-body">
@@ -219,15 +239,15 @@
             </div>
           </div>
         </div>
-        <div class="container describe visible">
-          <div class="row">
-            <p class="text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium tellus nunc, vehicula pellentesque elit iaculis quis. Phasellus dui risus, venenatis ac malesuada sed, vehicula ac nisi. Morbi gravida diam quis lacus commodo eleifend. Nullam augue sem, convallis eu sem in, imperdiet tincidunt mi. Aliquam vitae tincidunt mauris. Etiam convallis sagittis enim, quis placerat odio euismod vitae. Nullam vitae lectus diam. Quisque tellus massa, vulputate in luctus vel, malesuada mollis mi. Quisque luctus pretium eros ut venenatis. Sed hendrerit dui vitae eros iaculis finibus. Nulla et posuere mauris, nec placerat dolor. Nam orci sem, euismod et tortor a, rhoncus consectetur sapien. Nam a nisl laoreet, commodo tortor a, fermentum velit. Aenean arcu libero, ullamcorper eu neque vitae, aliquam venenatis odio.
-            </p>
-          </div>
+        <div class="col-md-5">
+          <p class="text-justify description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium tellus nunc, vehicula pellentesque elit iaculis quis. Phasellus dui risus, venenatis ac malesuada sed, vehicula ac nisi. Morbi gravida diam quis lacus commodo eleifend. Nullam augue sem, convallis eu sem in, imperdiet tincidunt mi. Aliquam vitae tincidunt mauris. Etiam convallis sagittis enim, quis placerat odio euismod vitae. Nullam vitae lectus diam. Quisque tellus massa, vulputate in luctus vel, malesuada mollis mi. Quisque luctus pretium eros ut venenatis. Sed hendrerit dui vitae eros iaculis finibus. Nulla et posuere mauris, nec placerat dolor. Nam orci sem, euismod et tortor a, rhoncus consectetur sapien. Nam a nisl laoreet, commodo tortor a, fermentum velit. Aenean arcu libero, ullamcorper eu neque vitae, aliquam venenatis odio.
+          </p>
+        </div>
+        <div class="container gallery visible">
           <div class="row justify-content-around">
             <div class="col-lg-4 col-md-6">
-              <img class="img-fluid rounded" src="img\casket1.jpg" alt="modesto">
+              <img class="img-fluid rounded" src="img\casket1.jpg" alt="szkatułka">
             </div>
           </div>
           <div class="row justify-content-center">
@@ -244,7 +264,7 @@
       <h2 class="text-center">Kontakt</h2>
       <div class="row">
         <div class="col-md-8">
-          <div id="map" style="width:100%;height:400px;"></div>
+          <img class="img-fluid rounded" src="img\google_maps_screen.png" alt="mapka">
         </div>
         <div class="col-md-4">
           <address>
@@ -309,18 +329,24 @@
     // Collapsing more info about project
     $('.more').click(function(){
       var rel = $(this).parent();
-      var nextRel = $(rel).next('.describe');
-      if ($(nextRel).hasClass('visible')){
-          $(nextRel).slideDown(300).removeClass('visible');
+      var nextRel = $(rel).next();
+      if ($(nextRel).next().hasClass('visible')){
+          $(nextRel).next().slideDown(300).removeClass('visible');
           $(this).find('h4').addClass('active');
       } else {
-          $(nextRel).slideUp(300).addClass('visible');
+          $(nextRel).next().slideUp(300).addClass('visible');
           $(this).find('h4').removeClass('active');
       }
     });
-    // Less button to hide describe
+    // Less button to hide gallery
     $('.less').click(function(){
-      $(this).closest('.describe').slideUp(300).addClass('visible')
+      var par = $(this).closest('.gallery');
+      var card = $(par).prev();
+      $(par).slideUp(300).addClass('visible');
+      $(card).prev().find('h4').removeClass('active');
+      $('body,html').animate({
+          scrollTop: $('#projects').offset().top - 70
+      }, 100);
     });
 
 
@@ -337,46 +363,46 @@
 
 
     // Google maps
-    $(function () {
-
-    function initMap() {
-
-        var location = new google.maps.LatLng(50.943838, 21.378133);
-
-        var mapCanvas = document.getElementById('map');
-        var mapOptions = {
-            center: location,
-            zoom: 16,
-            panControl: false,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions);
-        var marker = new google.maps.Marker({
-            position: location,
-            map: map
-        });
-
-        var contentString = '<div class="info-window">' +
-                '<h4>TheTale - Piotr Marzec</h4>' +
-                '<div class="info-content">' +
-                '<p>ul. Sienkiewicza 59</p>'+
-                '<p>27-400 Ostrowiec Świętokrzyski, Polska</p>' +
-                '</div>' +
-                '</div>';
-
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString,
-            maxWidth: 400
-        });
-
-        marker.addListener('click', function () {
-            infowindow.open(map, marker);
-        });
-
-    }
-
-    google.maps.event.addDomListener(window, 'load', initMap);
-  });
+  //   $(function () {
+  //
+  //   function initMap() {
+  //
+  //       var location = new google.maps.LatLng(50.943838, 21.378133);
+  //
+  //       var mapCanvas = document.getElementById('map');
+  //       var mapOptions = {
+  //           center: location,
+  //           zoom: 16,
+  //           panControl: false,
+  //           mapTypeId: google.maps.MapTypeId.ROADMAP
+  //       }
+  //       var map = new google.maps.Map(mapCanvas, mapOptions);
+  //       var marker = new google.maps.Marker({
+  //           position: location,
+  //           map: map
+  //       });
+  //
+  //       var contentString = '<div class="info-window">' +
+  //               '<h4>TheTale - Piotr Marzec</h4>' +
+  //               '<div class="info-content">' +
+  //               '<p>ul. Sienkiewicza 59</p>'+
+  //               '<p>27-400 Ostrowiec Świętokrzyski, Polska</p>' +
+  //               '</div>' +
+  //               '</div>';
+  //
+  //       var infowindow = new google.maps.InfoWindow({
+  //           content: contentString,
+  //           maxWidth: 400
+  //       });
+  //
+  //       marker.addListener('click', function () {
+  //           infowindow.open(map, marker);
+  //       });
+  //
+  //   }
+  //
+  //   google.maps.event.addDomListener(window, 'load', initMap);
+  // });
   </script>
 </body>
 </html>
