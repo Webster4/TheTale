@@ -93,6 +93,12 @@ footer li>a{
 footer li>a:hover{
   color: rgba(0,0,0,0.8);
 }
+#signature{
+  padding: .2rem 1rem;
+  font-family: 'Ranga', cursive;
+  font-size: 0.8rem;
+  color: #454343;
+}
 
 /* RWD */
 @media (max-width: 768px){
