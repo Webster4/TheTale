@@ -68,6 +68,9 @@
 .visible{
   display: none
 }
+.card{
+  border: none;
+}
 /* Contact section */
 #contact{
   padding-bottom: 4%;
