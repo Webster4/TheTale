@@ -127,7 +127,7 @@
         <div class="col-md-5">
           <h2>MODESTO</h2>
           <p class="text-justify description">
-            Modesto - lekki i nowoczesny projekt został stworzony, aby zapewnić Ci pełen komfort i wsparcie podczas pracy. Wykonany z wyjątkową dbałością o każdy szczegół. Do jego stworzenia wykorzystano drewno jesionowe i fornir oraz płytę stolarską. 
+            Modesto - lekki i nowoczesny projekt został stworzony, aby zapewnić Ci pełen komfort i wsparcie podczas pracy. Wykonany z wyjątkową dbałością o każdy szczegół. Do jego stworzenia wykorzystano drewno jesionowe i fornir oraz płytę stolarską.
         </div>
         <div class="container gallery visible">
           <div class="row justify-content-around">
@@ -363,10 +363,13 @@
       var nextRel = $(rel).next();
       if ($(nextRel).next().hasClass('visible')){
           $(nextRel).next().slideDown(300).removeClass('visible');
-          $(this).find('h4').addClass('active');
+          $('body,html').animate({
+              scrollTop: $((nextRel).next()).offset().top - 70
+          }, 300);
+          // $(this).find('h4').addClass('active');
       } else {
           $(nextRel).next().slideUp(300).addClass('visible');
-          $(this).find('h4').removeClass('active');
+          // $(this).find('h4').removeClass('active');
       }
     });
     // Less button to hide gallery
@@ -374,10 +377,10 @@
       var par = $(this).closest('.gallery');
       var card = $(par).prev();
       $(par).slideUp(300).addClass('visible');
-      $(card).prev().find('h4').removeClass('active');
+      // $(card).prev().find('h4').removeClass('active');
       $('body,html').animate({
-          scrollTop: $('#projects').offset().top - 70
-      }, 100);
+          scrollTop: $(card).offset().top - 70
+      }, 300);
     });
 
     // Smooth scrolling
@@ -392,11 +395,11 @@
         $(this).addClass('active');
     });
     var width = $(window).width();
-    $(window).resize(function () {
-        if (width <= 768) {
-          $('.description').addClass('visible');
-        }
-    });
+    // $(window).resize(function () {
+    //     if (width <= 768) {
+    //       $('.description').addClass('visible');
+    //     }
+    // });
 
   </script>
 </body>

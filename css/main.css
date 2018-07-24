@@ -54,7 +54,7 @@
 }
 /* Projects section */
 .project{
-  margin: 2.2rem 0;
+  margin: 4.5rem 0;
 }
 .gallery, .gallery img{
   margin: 1.5rem 0;
@@ -62,9 +62,9 @@
 .more:hover, .less:hover{
   cursor: pointer;
 }
-.active{
+/* .active{
   color: #bb6f11;
-}
+} */
 .visible{
   display: none
 }
@@ -111,6 +111,10 @@ footer li>a:hover{
   .section{
     min-height: 50vh;
   }
+  .section h2{
+    margin: .8rem 0 0 0;
+    text-align: center;
+  }
   #about p{
     padding-top: 1rem;
   }
@@ -118,7 +122,10 @@ footer li>a:hover{
     width: 100%;
     height: 100%;
   }
-  .description, .gallery, .gallery img, .less{
+  .description{
+    margin: .8rem 0 0 0;
+  }
+  .gallery, .gallery img, .less{
     margin: 1.5rem 0 0 0;
   }
   #contact address{
